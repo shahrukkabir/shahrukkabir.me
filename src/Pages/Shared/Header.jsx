@@ -11,8 +11,8 @@ const Header = () => {
     <div className="flex items-center justify-between lg:space-x-8 space-x-4 py-6 ">
       <div>
         <Link href="/">
-          <h3 className="cursor-pointer font-bold text-[18px] lg:text-[20px] text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-400 w-fit">
-            SHAHRUKKABIR
+          <h3 className="cursor-pointer font-bold text-3xl lg:text-[20px] text-white">
+            SRK.
           </h3>
         </Link>
       </div>
