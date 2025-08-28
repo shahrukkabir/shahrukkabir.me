@@ -28,13 +28,13 @@ const Home = () => {
             <ParticlesComponent></ParticlesComponent>
             <div>
                 <div className="flex flex-col lg:flex-row mt-8  gap-10 lg:gap-24">
-                    {/* profile image box */}
+                    {/* profile image */}
                     <div className="flex justify-center lg:justify-start">
                         <img className="rounded-full w-[260px] h-[260px] ring-4 shadow-2xl shadow-[#ffffff7d] lg:ring-6 ring-[#00a6fb] object-cover" src={img1} alt="Shahruk" />
                     </div>
-                    {/* content box parent */}
+                    {/* content section */}
                     <div>
-                        {/* title box */}
+                        {/* title */}
                         <div className="flex text-3xl lg:text-4xl text-sky-500 justify-center lg:justify-start font-bold  gap-2">
                             <h1>{"SHAHRUK KABIR"} </h1>
                         </div>
@@ -44,7 +44,7 @@ const Home = () => {
                         <h4 className="text-[#d2f0f9]  text-center lg:text-start py-2">
                             {"Chattogram - Bangladesh"}
                         </h4>
-                        {/* button box container  */}
+                        {/* button container  */}
                         <div className=" grid grid-cols-3 lg:grid-cols-7  py-3 gap-4">
                             {tags.map((tag) => {
                                 return (
@@ -78,7 +78,7 @@ const Home = () => {
 
                     </div>
                 </div>
-                {/* bottom Para graph container  */}
+                {/* description  */}
                 <div>
                     {/*  Codeforces (Pupil – 1237), CodeChef, and other online judges. */}
                     <p className="  text-[#edfaff] text-justify lg:text-base text-[15px] mx-2 mt-8 lg:mt-20 mb-8">
