@@ -3,7 +3,8 @@ import img1 from "../../assets/profile1.jpg"
 import img2 from "../../assets/profile2.jpg"
 import img3 from "../../assets/profile3.jpg"
 import ParticlesComponent from '../../Components/particle-animation/ParticlesComponent';
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaDiscord } from "react-icons/fa";
+import { Typewriter } from 'react-simple-typewriter';
 
 const tags = [
     { name: "React.JS" },
@@ -20,6 +21,7 @@ const socialLinks = [
     { id: 3, name: FaTwitter, url: "https://x.com/shahrukkabir03/" },
     { id: 4, name: FaFacebook, url: "https://www.facebook.com/shahrukkabir01/", },
     { id: 5, name: FaInstagram, url: "https://www.instagram.com/shahrukkabir01/", },
+    { id: 6, name: FaDiscord, url: "https://discord.com/channels/1387782496355352647/1398720085622919339", }
 ];
 
 const Home = () => {
@@ -39,7 +41,15 @@ const Home = () => {
                             <h1>{"SHAHRUK KABIR"} </h1>
                         </div>
                         <h4 className="text-xl flex justify-center lg:justify-start  py-2 ">
-                            {"Full Stack Developer"}
+                            <Typewriter
+                                words={["Full Stack Developer", "Problem Solver", "Front-End Developer", "React Developer", "Tech Enthusiast", "Learning NextJs & TypeScript"]}
+                                loop={true}
+                                cursor
+                                cursorStyle="|"
+                                typeSpeed={70}
+                                deleteSpeed={50}
+                                delaySpeed={1000}
+                            />
                         </h4>
                         <h4 className="text-[#d2f0f9]  text-center lg:text-start py-2">
                             {"Chattogram - Bangladesh"}
