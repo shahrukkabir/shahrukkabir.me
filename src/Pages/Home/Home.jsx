@@ -17,8 +17,8 @@ const tags = [
 ];
 
 const socialLinks = [
-    { id: 1, name: FaLinkedin, url: "https://www.linkedin.com/in/shahrukkabir/" },
-    { id: 2, name: FaGithub, url: "https://github.com/shahrukkabir/" },
+    { id: 1, name: FaGithub, url: "https://github.com/shahrukkabir/" },
+    { id: 2, name: FaLinkedin, url: "https://www.linkedin.com/in/shahrukkabir/" },
     { id: 3, name: FaTwitter, url: "https://x.com/shahrukkabir03/" },
     { id: 4, name: FaFacebook, url: "https://www.facebook.com/shahrukkabir01/", },
     { id: 5, name: FaInstagram, url: "https://www.instagram.com/shahrukkabir01/", },
@@ -28,12 +28,14 @@ const socialLinks = [
 const baseIconVariants = {
     initial: { y: 0, scale: 1, opacity: 1 },
     animate: (i) => ({
-        y: [0, -6, 0],
-        scale: [1, 1.1, 1],
+        y: [0, -8, 0],
+        scale: [1, 1.13, 1],
+        opacity: 1,
         transition: {
             repeat: Infinity,
-            duration: 2.5 + i * 0.2,
-            ease: "easeInOut",
+            duration: 2.8 + i * 0.2,
+            ease: 'easeInOut',
+            repeatType: 'loop',
             delay: 0.1 * i,
         },
     }),
@@ -86,8 +88,8 @@ const Home = () => {
                             })}
                         </div>
                         {/* Social links */}
-                        <div className="flex justify-center lg:justify-start py-6 gap-2">
-                            <div className="flex lg:gap-4 gap-2">
+                        <div className="flex justify-center lg:justify-start py-8 gap-2">
+                            <div className="flex lg:gap-4 gap-4">
                                 {socialLinks.map((social, i) => (
                                     <motion.a
                                         key={social.id}
