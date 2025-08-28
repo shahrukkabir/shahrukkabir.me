@@ -31,8 +31,6 @@ It features smooth animations, dynamic sections, and a clean, minimalist UI.
 src/
 │── assets/                  # Images and static assets
 │   ├── profile1.jpg
-│   ├── profile2.jpg
-│   ├── profile3.jpg
 │   └── react.svg
 
 │── Components/particle-animation/
@@ -84,13 +82,6 @@ src/
    ```bash
    npm run build
    ```
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** – feel free to use and modify it.
-
 ---
 
 ## 👤 Author
