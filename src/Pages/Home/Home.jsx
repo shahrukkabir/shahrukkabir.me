@@ -78,6 +78,18 @@ const Home = () => {
 
                     </div>
                 </div>
+                {/* bottom Para graph container  */}
+                <div>
+                    {/*  Codeforces (Pupil – 1237), CodeChef, and other online judges. */}
+                    <p className="  text-[#edfaff] text-justify lg:text-base text-[15px] mx-2 mt-8 lg:mt-20 mb-8">
+                        {"Hi, I am Shahruk Ibney Kabir, a MERN Stack Developer and Competitive Programmer. I specialize in building full-stack web applications with SEO optimization in mind and can develop MERN (full-stack) based applications from scratch to deployment. Currently, I’m learning Next.js and TypeScript to enhance my frontend skills. I love to solve problems on "}
+                        <a href="https://codeforces.com/profile/shahrukkabir" target="_blank" rel="noopener noreferrer" className="text-[#00a6fb] hover:underline">Codeforces</a> {"(Pupil – 1237), "}
+                        <a href="https://leetcode.com/u/shahrukkabir/" target="_blank" rel="noopener noreferrer" className="text-[#00a6fb] hover:underline">LeetCode</a>
+                        {" , "}
+                        <a href="https://www.codechef.com/users/shahrukkabir" target="_blank" rel="noopener noreferrer" className="text-[#00a6fb] hover:underline">CodeChef</a>
+                        {" etc. online judges."}
+                    </p>
+                </div>
             </div>
         </main>
     );
