@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from "../../assets/profile1.jpg"
 import img2 from "../../assets/profile2.jpg"
 import img3 from "../../assets/profile3.jpg"
+import { motion } from "framer-motion";
 import ParticlesComponent from '../../Components/particle-animation/ParticlesComponent';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaDiscord } from "react-icons/fa";
 import { Typewriter } from 'react-simple-typewriter';
@@ -23,6 +24,26 @@ const socialLinks = [
     { id: 5, name: FaInstagram, url: "https://www.instagram.com/shahrukkabir01/", },
     { id: 6, name: FaDiscord, url: "https://discord.com/channels/1387782496355352647/1398720085622919339", }
 ];
+
+const baseIconVariants = {
+    initial: { y: 0, scale: 1, opacity: 1 },
+    animate: (i) => ({
+        y: [0, -6, 0],
+        scale: [1, 1.1, 1],
+        transition: {
+            repeat: Infinity,
+            duration: 2.5 + i * 0.2,
+            ease: "easeInOut",
+            delay: 0.1 * i,
+        },
+    }),
+    hover: {
+        scale: 1.2,
+        color: "var(--color-primary, #00a6fb)",
+        boxShadow: "0 4px 18px 0 rgba(0,166,251,0.6)",
+        transition: { type: "spring", stiffness: 400, damping: 15 },
+    },
+};
 
 const Home = () => {
     return (
@@ -64,11 +85,24 @@ const Home = () => {
                                 );
                             })}
                         </div>
-                        {/* Social links  */}
+                        {/* Social links */}
                         <div className="flex justify-center lg:justify-start py-6 gap-2">
                             <div className="flex lg:gap-4 gap-2">
-                                {socialLinks.map((social) => (
-                                    <a target="_blank" key={social.id} className="hover:primary_yellow duration-300 ease-in text-red lg:text-[24px] text-[20px]" href={social.url} > <social.name /> </a>
+                                {socialLinks.map((social, i) => (
+                                    <motion.a
+                                        key={social.id}
+                                        href={social.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="lg:text-[24px] text-[20px] text-white"
+                                        initial="initial"
+                                        animate="animate"
+                                        whileHover="hover"
+                                        custom={i}
+                                        variants={baseIconVariants}
+                                    >
+                                        <social.name />
+                                    </motion.a>
                                 ))}
                             </div>
                         </div>
