@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const navData = [
-  { id: 1, name: "About", path: "/" },
+  { id: 1, name: "Home", path: "/" },
   { id: 2, name: "Projects", path: "/projects" },
-  { id: 3, name: "Blog", path: "/blog" },
+  { id: 3, name: "Contact", path: "/contact" },
 ];
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
       </div>
       <div className={"flex lg:space-x-4 space-x-3 lg:text-base text-[12px] "}>
         {navData.map((nav) => (
-          <Link href={nav.path} key={nav.id}>
+          <Link to={nav.path} key={nav.id}>
             <p className={"uppercase text-sm"}>{nav.name}</p>
           </Link>
         ))}
