@@ -156,9 +156,9 @@ const Home = () => {
                     </motion.div>
                 </div>
                 {/* description  */}
-                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.6 }} viewport={{ once: true, amount: 0.3 }}>
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.4 }}>
                     {/*  Codeforces (Pupil – 1237), CodeChef, and other online judges. */}
-                    <p className="  text-[#edfaff] text-justify lg:text-base text-[15px] mx-2 mt-8 lg:mt-20 mb-8">
+                    <p className="  text-[#edfaff] text-center lg:text-base text-[15px] mx-2 mt-8 lg:mt-20 mb-8">
                         {"Hi, I am Shahruk Ibney Kabir, a MERN Stack Developer and Competitive Programmer. I specialize in building full-stack web applications with SEO optimization in mind and can develop MERN (full-stack) based applications from scratch to deployment. Currently, I’m learning Next.js and TypeScript to enhance my frontend skills. I love to solve problems on "}
                         <a href="https://codeforces.com/profile/shahrukkabir" target="_blank" rel="noopener noreferrer" className="text-[#00a6fb] hover:underline">Codeforces</a> {"(Pupil – 1237), "}
                         <a href="https://leetcode.com/u/shahrukkabir/" target="_blank" rel="noopener noreferrer" className="text-[#00a6fb] hover:underline">LeetCode</a>
