@@ -54,13 +54,13 @@ const Home = () => {
             <div>
                 <div className="flex flex-col lg:flex-row mt-8  gap-10 lg:gap-24">
                     {/* profile image -> left part */}
-                    <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center lg:justify-start">
+                    <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center lg:justify-start will-change-transform">
                         <div className="flex justify-center lg:justify-start">
                             <img className="rounded-full w-[260px] h-[260px] ring-4 shadow-2xl shadow-[#ffffff7d] lg:ring-6 ring-[#00a6fb] object-cover" src={img1} alt="Shahruk" />
                         </div>
                     </motion.div>
                     {/* content section -> right part */}
-                    <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.3 }}>
+                    <motion.div className="will-change-transform" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.3 }}>
                         <div>
                             {/* title */}
                             <motion.h1
@@ -156,7 +156,7 @@ const Home = () => {
                     </motion.div>
                 </div>
                 {/* description  */}
-                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.4 }}>
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.3 }}   viewport={{ once: true }}>
                     {/*  Codeforces (Pupil – 1237), CodeChef, and other online judges. */}
                     <p className="  text-[#edfaff] text-center lg:text-base text-[15px] mx-2 mt-8 lg:mt-20 mb-8">
                         {"Hi, I am Shahruk Ibney Kabir, a MERN Stack Developer and Competitive Programmer. I specialize in building full-stack web applications with SEO optimization in mind and can develop MERN (full-stack) based applications from scratch to deployment. Currently, I’m learning Next.js and TypeScript to enhance my frontend skills. I love to solve problems on "}
