@@ -16,7 +16,7 @@ const Header = () => {
       <header className="flex items-center justify-between lg:space-x-8 space-x-4 py-6 ">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <h3 className="cursor-pointer font-bold text-2xl md:text-3xl text-white">
+          <h3 className="cursor-pointer font-bold text-3xl md:text-3xl text-white">
             SRK<span className="text-teal-400">.</span>
           </h3>
         </Link>
@@ -55,16 +55,9 @@ const Header = () => {
       )}
 
       {/* Side Panel for Mobile */}
-      <div
-        className={`fixed top-0 right-0 h-screen w-52 bg-[hsla(234,86%,3%,0.98)] text-white flex flex-col items-start px-6 py-10 space-y-6 transform transition-transform duration-500 md:hidden z-50 ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
+      <div className={`fixed top-0 right-0 h-screen w-52 bg-[hsla(234,86%,3%,0.98)] text-white flex flex-col items-start px-6 py-10 space-y-6 transform transition-transform duration-500 md:hidden z-50 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
         {/* Close Button */}
-        <button
-          onClick={() => setIsMenuOpen(false)}
-          className="absolute top-6 right-6"
-        >
+        <button onClick={() => setIsMenuOpen(false)} className="absolute top-6 right-6">
           <svg
             className="w-6 h-6"
             fill="none"
