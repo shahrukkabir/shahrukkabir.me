@@ -3,7 +3,7 @@ import img1 from "../../assets/profile1.jpg"
 import img2 from "../../assets/profile2.jpg"
 import img3 from "../../assets/profile3.jpg"
 import { motion } from "framer-motion";
-import ParticlesComponent from '../../Components/particle-animation/ParticlesComponent';
+// import ParticlesComponent from '../../Components/particle-animation/ParticlesComponent';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaDiscord } from "react-icons/fa";
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -50,11 +50,11 @@ const baseIconVariants = {
 const Home = () => {
     return (
         <main>
-            <ParticlesComponent></ParticlesComponent>
+            {/* <ParticlesComponent></ParticlesComponent> */}
             <div>
                 <div className="flex flex-col lg:flex-row mt-8  gap-10 lg:gap-24">
                     {/* profile image -> left part */}
-                    <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center lg:justify-start will-change-transform">
+                    <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }} className="flex justify-center lg:justify-start will-change-transform">
                         <div className="flex justify-center lg:justify-start">
                             <img className="rounded-full w-[260px] h-[260px] ring-4 shadow-2xl shadow-[#ffffff7d] lg:ring-6 ring-[#00a6fb] object-cover" src={img1} alt="Shahruk" />
                         </div>
