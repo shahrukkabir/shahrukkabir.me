@@ -37,10 +37,9 @@ body {
 /* title style */
 h1 {
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(to right, #ff6b6b, #feca57, #48dbfb);
+  background: linear-gradient(to right, #48dbfb , #feca57, #ff6b6b );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-
 
 
