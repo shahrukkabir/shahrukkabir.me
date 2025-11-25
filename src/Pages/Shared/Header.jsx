@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const navData = [
@@ -9,6 +9,18 @@ const navData = [
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMenuOpen]);
+
 
   return (
     <>
@@ -26,10 +38,9 @@ const Header = () => {
           {navData.map((nav) => (
             <NavLink key={nav.id} to={nav.path}
               className={({ isActive }) =>
-                `uppercase transition-colors ${
-                  isActive
-                    ? "text-teal-400 font-semibold"
-                    : "text-gray-300 hover:text-teal-300 "
+                `uppercase transition-colors ${isActive
+                  ? "text-teal-400 font-semibold"
+                  : "text-gray-300 hover:text-teal-300 "
                 }`
               }
             >
@@ -57,35 +68,36 @@ const Header = () => {
       {/* Side Panel for Mobile */}
       <div className={`fixed top-0 right-0 h-screen w-52 bg-[hsla(234,86%,3%,0.98)] text-white flex flex-col items-start px-6 py-10 space-y-6 transform transition-transform duration-500 md:hidden z-50 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
         {/* Close Button */}
-        <button onClick={() => setIsMenuOpen(false)} className="absolute top-6 right-6">
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="white"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        </button>
+        <div className="mb-16">
+          <button onClick={() => setIsMenuOpen(false)} className="absolute top-6 right-6">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="white"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
 
         {navData.map((nav) => (
           <NavLink
             key={nav.id}
             to={nav.path}
-            onClick={() => setIsMenuOpen(false)} // close on link click too
+            onClick={() => setIsMenuOpen(false)}
             className={({ isActive }) =>
-              `uppercase text-lg transition-colors ${
-                isActive
-                  ? "text-teal-400 font-semibold"
-                  : "text-gray-300 hover:text-teal-300"
-              }`
+              `uppercase text-lg transition-colors 
+       ${isActive ? "text-teal-400 font-semibold" : "text-gray-300 hover:text-teal-300"}
+       mx-auto py-4`
             }
           >
             {nav.name}
           </NavLink>
         ))}
+
       </div>
     </>
   );

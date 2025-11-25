@@ -1,11 +1,10 @@
-import React from 'react';
-import img1 from "../../assets/profile1.jpg"
-import img2 from "../../assets/profile2.jpg"
-import img3 from "../../assets/profile3.jpg"
+import srk1 from "../../assets/srk.jpg"
 import { motion } from "framer-motion";
-import ParticlesComponent from '../../Components/particle-animation/ParticlesComponent';
+import ParticlesComponent from '../../Components/ParticlesComponent';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaDiscord } from "react-icons/fa";
 import { Typewriter } from 'react-simple-typewriter';
+import Cursor from "../../Components/Cursor";
+import ShinyButton from "../../Components/ShinyButton";
 
 const tags = [
     { name: "React.JS" },
@@ -50,13 +49,12 @@ const baseIconVariants = {
 const Home = () => {
     return (
         <main>
-            <ParticlesComponent></ParticlesComponent>
             <div>
                 <div className="flex flex-col lg:flex-row mt-8  gap-10 lg:gap-24">
                     {/* profile image -> left part */}
                     {/* <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }} className="flex justify-center lg:justify-start will-change-transform"> */}
                     <div className="flex justify-center lg:justify-start">
-                        <img className="rounded-full w-[260px] h-[260px] ring-4 shadow-2xl shadow-[#ffffff7d] lg:ring-6 ring-[#00a6fb] object-cover" src={img1} alt="Shahruk" />
+                        <img className="rounded-full w-[270px] h-[270px] ring-4 shadow-2xl shadow-[#ffffff7d] lg:ring-6 ring-[#00a6fb] object-cover" src={srk1} alt="Shahruk" />
                     </div>
                     {/* </motion.div> */}
                     {/* content section -> right part */}
@@ -143,20 +141,35 @@ const Home = () => {
 
                         {/* my resume  */}
                         <div className="my-2 flex justify-center lg:justify-start">
-                            <a href="" download target="_blank">
-                                <button className="relative cursor-pointer group rounded-lg border-2 border-[#00a6fb] lg:px-4 lg:py-1 px-4 py-2 text-xl text-[#1caff9] overflow-hidden transition-all duration-1000 shadow-[0_0_20px_rgba(0,166,251,0.4)] hover:shadow-[0_0_35px_rgba(0,166,251,0.7)]">
-                                    <span className="relative z-10 transition-all duration-700 delay-200 group-hover:text-white">
+                            <a href="https://drive.google.com/file/d/1NU4nZ7qblCucOZZIOjGys9RBp780PB67/view"
+                                download
+                                target="_blank">
+                                <ShinyButton
+
+
+                                    className="relative cursor-pointer group rounded-lg border-2 border-[#00a6fb]
+              px-4 py-2 text-xl text-[#1caff9] overflow-hidden
+             transition-all duration-700 shadow-[0_0_20px_rgba(0,166,251,0.4)]
+             hover:shadow-[0_0_25px_rgba(0,166,251,0.7)]"
+                                >
+                                    <span className="relative z-10 transition-all duration-500 delay-150 group-hover:text-white flex items-center gap-2">
                                         Resume
                                     </span>
-                                    <span className="absolute inset-0 bg-[#00a6fb] w-0 left-0 transition-all duration-1000 ease-in-out group-hover:w-full"></span>
-                                </button>
+
+                                    <span
+                                        className="absolute inset-0 bg-[#238bbf] w-0 left-1/2 -translate-x-1/2 
+               group-hover:w-full transition-all duration-700 ease-in-out"
+                                    />
+                                </ShinyButton>
+
+
                             </a>
                         </div>
                     </div>
                     {/* </motion.div> */}
                 </div>
                 {/* description  */}
-                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.3 }} viewport={{ once: true }}>
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.3 }} viewport={{ once: true }}>
                     {/*  Codeforces (Pupil – 1237), CodeChef, and other online judges. */}
                     <p className="  text-[#edfaff] text-center lg:text-base text-[15px] mx-2 mt-8 lg:mt-20 mb-8">
                         {"Hi, I am Shahruk Ibney Kabir, a MERN Stack Developer and Competitive Programmer. I specialize in building full-stack web applications with SEO optimization in mind and can develop MERN (full-stack) based applications from scratch to deployment. Currently, I’m learning Next.js and TypeScript to enhance my frontend skills. I love to solve problems on "}
