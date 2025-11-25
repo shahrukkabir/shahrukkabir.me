@@ -26,7 +26,6 @@ const Cursor = () => {
 
     window.addEventListener("mousemove", handleMouseMove);
 
-    // Ensure elements loaded
     const timer = setTimeout(() => {
       const interactiveElements = document.querySelectorAll(
         "a, button, img, input, textarea, select, .shiny-cta, [role='button']"
@@ -102,7 +101,6 @@ const Cursor = () => {
         }}
       />
 
-      {/* Border Cursor */}
       <div
         className={`absolute rounded-full border-2 border-teal-400 ${
           isHovering ? "bg-teal-400/20" : ""

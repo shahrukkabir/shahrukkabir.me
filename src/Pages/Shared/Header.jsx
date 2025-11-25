@@ -24,9 +24,7 @@ const Header = () => {
 
   return (
     <>
-      {/* Header */}
       <header className="flex items-center justify-between lg:space-x-8 space-x-4 py-6 ">
-        {/* Logo */}
         <Link to="/" className="flex items-center">
           <h3 className="cursor-pointer font-bold text-3xl md:text-3xl text-white">
             SRK<span className="text-teal-400">.</span>
@@ -70,16 +68,7 @@ const Header = () => {
         {/* Close Button */}
         <div className="mb-16">
           <button onClick={() => setIsMenuOpen(false)} className="absolute top-6 right-6">
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="white"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg>
+            <svg className="w-6 h-6" fill="none" stroke="white" strokeWidth="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
           </button>
         </div>
 
@@ -88,16 +77,10 @@ const Header = () => {
             key={nav.id}
             to={nav.path}
             onClick={() => setIsMenuOpen(false)}
-            className={({ isActive }) =>
-              `uppercase text-lg transition-colors 
-       ${isActive ? "text-teal-400 font-semibold" : "text-gray-300 hover:text-teal-300"}
-       mx-auto py-4`
-            }
-          >
+            className={({ isActive }) => `uppercase text-lg transition-colors ${isActive ? "text-teal-400 font-semibold" : "text-gray-300 hover:text-teal-300"} mx-auto py-4`}>
             {nav.name}
           </NavLink>
         ))}
-
       </div>
     </>
   );

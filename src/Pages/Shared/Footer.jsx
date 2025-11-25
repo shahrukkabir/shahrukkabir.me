@@ -1,4 +1,4 @@
-import { FaHackerrank} from "react-icons/fa";
+import { FaHackerrank } from "react-icons/fa";
 import { SiCodeforces, SiLeetcode } from "react-icons/si";
 
 const Footer = () => {

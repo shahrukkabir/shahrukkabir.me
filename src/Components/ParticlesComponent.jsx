@@ -6,16 +6,14 @@ const ParticlesComponent = () => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
-    // Initialize particle engine once on component mount
     initParticlesEngine(async (engine) => {
-      await loadSlim(engine); // Load slim configuration
+      await loadSlim(engine); 
     }).then(() => {
       setInit(true);
     });
   }, []);
 
   const particlesLoaded = (container) => {
-    // console.log(container);
   };
 
   const options = useMemo(

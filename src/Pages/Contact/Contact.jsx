@@ -1,8 +1,7 @@
-import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FiMapPin, FiPhone, FiMail } from "react-icons/fi";
 import toast from "react-hot-toast";
-import ShinyButton from "../../Components/ShinyButton";
+import { useRef, useState } from "react";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -13,10 +12,9 @@ const Contact = () => {
     if (!formRef.current) return;
 
     setSending(true);
-    emailjs
-      .sendForm("service_kzsyybt", "template_vjw4j1q", formRef.current, {
-        publicKey: "-i8XhDA_p705BsNiy",
-      })
+    emailjs.sendForm("service_kzsyybt", "template_vjw4j1q", formRef.current, {
+      publicKey: "-i8XhDA_p705BsNiy",
+    })
       .then(
         () => {
           setSending(false);
@@ -32,16 +30,12 @@ const Contact = () => {
   };
 
   return (
-    <section
-      id="contact"
-      className="pb-20 pt-6 "
-    >
+    <section id="contact" className="pb-20 pt-6 ">
       <div className="max-w-7xl mx-auto px-4 ">
-        <div className="text-center mb-12">
+        <div className="text-left lg:text-center mb-12">
           <h2 className="text-4xl font-bold mb-2">
             Contact <span className="text-accent">Me</span>
           </h2>
-
         </div>
 
         <div className="flex w-full md:flex-row-reverse md:justify-between items-center flex-col gap-10">
@@ -63,7 +57,7 @@ const Contact = () => {
               <label className="block">
                 <span className="sr-only">Email</span>
                 <input
-                  className="w-full focus:outline-none border-b-[1px] border-accent text-white bg-transparent px-3 py-2 placeholder:text-slate-400"
+                  className="w-full focus:outline-none border-b-[1px] border-accent bg-transparent px-3 py-2 placeholder:text-slate-400"
                   type="email"
                   placeholder="Email"
                   name="email"
@@ -80,47 +74,18 @@ const Contact = () => {
                   required
                 />
               </label>
-
               <div>
                 <button
-  type="submit"
-  disabled={sending}
-  className="
-    relative
-    px-8
-    py-2.5
-    rounded-lg
-    overflow-hidden
-    text-white
-    font-medium
-    transition-all
-    duration-300
-    border border-accent/40
-    bg-accent/10
-    hover:bg-accent/20
-    disabled:bg-accent/5
-    disabled:cursor-not-allowed
-    backdrop-blur-md
-
-    /* NEW theme-matched green glow */
-   shadow-[0_0_10px_rgba(255,255,255,0.20)]
-hover:shadow-[0_0_18px_rgba(255,255,255,0.35)]
-
-
-
-  "
->
-  {sending ? "Sending..." : "Send Message"}
-</button>
-
-
-
+                  type="submit"
+                  disabled={sending}
+                  className="relative px-8 py-2.5 rounded-lg overflow-hiddentext-white font-medium transition-all duration-300 border border-accent/40 bg-accent/10 hover:bg-accent/20 disabled:bg-accent/5 disabled:cursor-not-allowed backdrop-blur-md shadow-[0_0_10px_rgba(255,255,255,0.20)] hover:shadow-[0_0_18px_rgba(255,255,255,0.35)]">
+                  {sending ? "Sending..." : "Send Message"}
+                </button>
               </div>
             </form>
           </div>
-
           {/* contact info card */}
-          <div className="md:w-1/2 w-full flex flex-col justify-items-start  gap-6">
+          <div className="md:w-1/2 w-full flex flex-col justify-between gap-6">
             <div className="flex gap-3 items-start bg-white/4 backdrop-blur-sm border border-white/6 rounded-xl p-4">
               <div className="bg-accent/10 p-2 rounded-md">
                 <FiMapPin className="text-2xl text-accent" />
