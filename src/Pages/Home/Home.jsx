@@ -135,7 +135,7 @@ const Home = () => {
 
                         {/* my resume  */}
                         <div className="my-2 flex justify-center lg:justify-start">
-                            <a href="https://drive.google.com/file/d/1NU4nZ7qblCucOZZIOjGys9RBp780PB67/view" download target="_blank">
+                            <a href="https://drive.google.com/file/d/1GyeL6eBiIoasjDinpUYGo4GnIfnQP0k2/view?usp=sharing" download target="_blank">
                                 <ShinyButton className="shadow-[0_0_20px_rgba(0,166,251,0.4)] hover:shadow-[0_0_25px_rgba(0,166,251,0.7)]">
                                     <span className="relative z-10 transition-all duration-500 delay-150 group-hover:text-white flex items-center gap-2">
                                         Resume
