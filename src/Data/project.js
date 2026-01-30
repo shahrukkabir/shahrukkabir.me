@@ -6,7 +6,7 @@ export const projects = [
     liveURL: { url: "https://srk-skytower.web.app/" },
     cover: {
       srcPath:
-        "https://i.ibb.co.com/DHg3Kt7x/Screenshot-2025-11-24-231937.png",
+        "https://i.ibb.co/CsQVCNnV/Screenshot-2026-01-30-230433.png",
     },
     summary: [
       ` SkyTower is a single-building management system designed to simplify the experience for users, building members, and administrators. `,
@@ -23,6 +23,31 @@ export const projects = [
     gitHubRepo: {
       icon: FaGithub,
       repo: "https://github.com/shahrukkabir/skytower-bms",
+    }
+  },
+  {
+    id: "repair-point",
+    name: "RepairPoint",
+    liveURL: { url: "https://srk-repairpoint.vercel.app/" },
+    cover: {
+      srcPath:
+        "https://i.ibb.co/KzxF5SXh/Screenshot-2026-01-30-230149.png",
+    },
+    summary: [
+      ` RepairPoint is a repair service booking platform that makes it easy for users, providers, and admins to manage services and bookings securely. `,
+    ],
+    tags: [
+      { name: "Next.js" },
+      { name: "MongoDB" },
+      { name: "NextAuth.js" },
+      { name: "JWT Auth" },
+      { name: "React Query" },
+      { name: "Tailwind CSS" },
+      { name: "REST API" },
+    ],
+    gitHubRepo: {
+      icon: FaGithub,
+      repo: "https://github.com/shahrukkabir/Repair-Point",
     }
   },
   {
