@@ -1,5 +1,5 @@
 // import srk1 from "../../assets/srk.jpg"
-import srk1 from "../../assets/srk-2.jpg"
+import srk1 from "../../assets/srk-2.webp"
 import { motion } from "framer-motion";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaDiscord } from "react-icons/fa";
 import { Typewriter } from 'react-simple-typewriter';
@@ -51,7 +51,7 @@ const Home = () => {
             <div>
                 <div className="flex flex-col lg:flex-row mt-8  gap-10 lg:gap-24">
                     <div className="flex justify-center lg:justify-start">
-                        <img className="rounded-full w-[270px] h-[270px] ring-4 shadow-2xl shadow-[#ffffff7d] lg:ring-6 ring-[#00a6fb] object-cover" src={srk1} alt="Shahruk" />
+                        <img loading="lazy" className="rounded-full  w-[270px] h-[270px] ring-4 shadow-2xl shadow-[#ffffff7d] lg:ring-6 ring-[#00a6fb] object-cover" src={srk1} alt="Shahruk" />
                     </div>
                     <div>
                         {/* title */}

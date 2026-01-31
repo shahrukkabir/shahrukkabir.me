@@ -6,7 +6,7 @@ export const projects = [
     liveURL: { url: "https://srk-skytower.web.app/" },
     cover: {
       srcPath:
-        "https://i.ibb.co/CsQVCNnV/Screenshot-2026-01-30-230433.png",
+        "https://i.ibb.co/wrppncdG/Screenshot-2026-01-31-182829.webp",
     },
     summary: [
       ` SkyTower is a single-building management system designed to simplify the experience for users, building members, and administrators. `,
@@ -31,7 +31,7 @@ export const projects = [
     liveURL: { url: "https://srk-repairpoint.vercel.app/" },
     cover: {
       srcPath:
-        "https://i.ibb.co/KzxF5SXh/Screenshot-2026-01-30-230149.png",
+        "https://i.ibb.co/35Ym5c4c/Screenshot-2026-01-30-230149.webp",
     },
     summary: [
       ` RepairPoint is a repair service booking platform that makes it easy for users, providers, and admins to manage services and bookings securely. `,
@@ -56,7 +56,7 @@ export const projects = [
     liveURL: { url: "https://srk-rider.web.app/" },
     cover: {
       srcPath:
-        "https://i.ibb.co.com/Q36hZ9C2/Screenshot-2025-11-24-234204.png",
+        "https://i.ibb.co/CKsWjmnJ/Screenshot-2025-11-24-234204.webp"
     },
     summary: [
       `SrkRider is a parcel delivery management client built with MERN, offering an intuitive interface for sending, receiving, and managing parcels effortlessly.`,
@@ -80,7 +80,7 @@ export const projects = [
     liveURL: { url: "https://shahruk-gadget-heaven.netlify.app/" },
     cover: {
       srcPath:
-        "https://i.ibb.co.com/B2SLCjLr/Screenshot-2025-11-25-122303.png",
+        "https://i.ibb.co/GQS9JM11/Screenshot-2025-11-25-122303-1.webp",
     },
     summary: [
       "Gadget Heaven is a cutting-edge e-commerce platform that allows users to browse, manage, and purchase the latest gadgets.",
@@ -103,7 +103,7 @@ export const projects = [
     liveURL: { url: "https://srk-book-tracker.netlify.app/" },
     cover: {
       srcPath:
-        "https://i.ibb.co.com/Q3HNjz3z/Screenshot-2025-11-25-123314.png",
+        "https://i.ibb.co/LDgs1kJQ/Screenshot-2025-11-25-123314.webp",
     },
     summary: [
       "A modern React website for managing your personal reading list, built with React.js, Vite, and Tailwind CSS, allowing users to browse books, view details, and organize titles into Read and Wishlist sections.",
@@ -120,7 +120,7 @@ export const projects = [
     liveURL: { url: "https://shahrukkabir.github.io/e-Wallet/" },
     cover: {
       srcPath:
-        "https://i.ibb.co.com/DfcwMDDw/Screenshot-2025-11-25-124036.png",
+        "https://i.ibb.co/39gWDbt4/Screenshot-2025-11-25-124036.webp",
     },
     summary: [
       "A Digital Wallet System built with HTML, CSS, and JavaScript that lets users manage basic finances, including depositing, withdrawing, transferring money, and tracking transactions.",
@@ -142,7 +142,7 @@ export const projects = [
     liveURL: { url: "https://shahrukkabir.github.io/Pet-Adoption/" },
     cover: {
       srcPath:
-        "https://i.ibb.co.com/qLQV592M/Screenshot-2025-11-25-130518.png",
+        "https://i.ibb.co/5W9BSPxN/Screenshot-2025-11-25-130518.webp",
     },
     summary: [
       "Peddy is a responsive web platform that simplifies the pet adoption process by enabling users to view and adopt pets based on categories such as Dogs, Cats, Rabbits, and Birds. ",
@@ -164,7 +164,7 @@ export const projects = [
     liveURL: { url: "https://shahrukkabir.github.io/Donation/" },
     cover: {
       srcPath:
-        "https://i.ibb.co.com/RTs42FGF/Screenshot-2025-11-25-130935.png",
+        "https://i.ibb.co/2BSH687/Screenshot-2025-11-25-130935.webp",
     },
     summary: [
       "A simple and interactive donation website built with HTML, CSS, and JavaScript DOM, allowing users to contribute easily, track donation amounts, and engage with a clean, user-friendly interface.",
@@ -186,7 +186,7 @@ export const projects = [
     liveURL: { url: "https://shahrukkabir.github.io/Architect/" },
     cover: {
       srcPath:
-        "https://i.ibb.co.com/bgpHn9qk/Screenshot-2025-11-25-131450.png",
+        "https://i.ibb.co/mrdfm8bS/Screenshot-2025-11-25-131450.webp",
     },
     summary: [
       "A modern and responsive architect landing page built with HTML, CSS, and Tailwind CSS, designed to showcase services, projects, and brand identity with a clean and professional layout.",

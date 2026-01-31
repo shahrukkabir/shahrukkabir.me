@@ -26,7 +26,7 @@ const Header = () => {
     <>
       <header className="flex items-center justify-between lg:space-x-8 space-x-4 py-6 ">
         <Link to="/" className="flex items-center">
-          <h3 className="cursor-pointer font-bold text-3xl md:text-3xl text-white">
+          <h3 className="cursor-pointer font-bold italic text-3xl md:text-3xl text-white">
             SRK<span className="text-teal-400">.</span>
           </h3>
         </Link>
